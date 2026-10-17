@@ -179,6 +179,7 @@ class ExternalChannelSendClientImplTest {
     }
 
     @Test
+    @ExtendWith(SpringExtension.class)
     void sendCourtesyNotificationWhatsappInvalidDescriptor() {
         NotificationInt notificationInt = buildNotification();
         NotificationRecipientInt notificationRecipientInt = buildNotificationRecipientInt();
